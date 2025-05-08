@@ -232,15 +232,45 @@
             <p><strong>Sở thích:</strong> Chụp Ảnh, Làm Nhạc, Code</p>
         </div>
 
-        <div class="social-links-container">
-            <p class="contact-title">Contact With Me</p>
-            <div class="social-links">
-                <a href="https://www.facebook.com/hanguyenbee.2006" target="_blank" class="facebook">Facebook</a>
-                <a href="https://www.tiktok.com/@_hnguynbee.hng_" target="_blank" class="tiktok">TikTok</a>
-                <a href="https://zalo.me/0376202006" target="_blank" class="zalo">Zalo</a>
-            </div>
+         <div class="social-links-container">
+        <p class="contact-title">Contact With Me</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/hanguyenbee.2006" target="_blank" class="facebook">
+                <img src="facebook-logo.png" alt="Facebook" class="social-logo">
+            </a>
+            <a href="https://www.tiktok.com/@_hnguynbee.hng_" target="_blank" class="tiktok">
+                <img src="tiktok-logo.png" alt="TikTok" class="social-logo">
+            </a>
+            <a href="https://zalo.me/0376202006" target="_blank" class="zalo">
+                <img src="zalo-logo.png" alt="Zalo" class="social-logo">
+            </a>
         </div>
-    </div>
-</body>
+ <style>
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 
-</html>
+    .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; /* Bo tròn nút */
+        background-color: #000; /* Màu đen */
+        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng khi hover */
+    }
+
+    .social-logo {
+        width: 30px;
+        height: 30px;
+        object-fit: contain; /* Đảm bảo logo không bị méo */
+    }
+</style>
