@@ -256,21 +256,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%; /* Bo tròn nút */
-        background-color: #000; /* Màu đen */
-        transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        width: auto; /* Không giới hạn chiều rộng */
+        height: auto; /* Không giới hạn chiều cao */
+        border-radius: 0; /* Loại bỏ bo tròn */
+        background-color: transparent; /* Loại bỏ màu nền */
+        transition: transform 0.3s ease-in-out; /* Hiệu ứng phóng to mượt */
     }
 
     .social-links a:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng bóng khi hover */
+        transform: scale(1.2); /* Phóng to logo khi hover */
+        background-color: transparent; /* Đảm bảo không thay đổi màu nền */
+        box-shadow: none; /* Loại bỏ hiệu ứng bóng */
     }
 
     .social-logo {
-        width: 30px;
-        height: 30px;
+        width: 40px; /* Kích thước logo */
+        height: 40px;
         object-fit: contain; /* Đảm bảo logo không bị méo */
     }
 </style>
